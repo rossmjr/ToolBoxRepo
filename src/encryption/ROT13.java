@@ -2,13 +2,13 @@ package ciphers;
 
 public class ROT13 {
 	
-	public static void main(String[] args) {
-		System.out.println(encrypt("nerf"));
-		System.out.println(decrypt("Gb trg gb gur bgure fvqr!"));
-		System.out.println(decrypt("Jul qvq gur puvpxra pebff gur ebnq?"));
-		System.out.println(encrypt("To get to the other side!"));
-		
-	}
+//	public static void main(String[] args) {
+//		System.out.println(encrypt("Why did the chicken cross the road?"));
+//		System.out.println(decrypt("Gb trg gb gur bgure fvqr!"));
+//		System.out.println(decrypt("Jul qvq gur puvpxra pebff gur ebnq?"));
+//		System.out.println(encrypt("To get to the other side!"));
+//		
+//	}
 
 	public static String encrypt(String message){
 		String e = "";
