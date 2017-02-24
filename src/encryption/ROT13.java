@@ -10,47 +10,59 @@ public class ROT13 {
 //		
 //	}
 
+	/**
+	 * Encrypts the given message using the ROT13 cipher. Case is not adjusted.
+	 * 
+	 * @param message - The message to be encrypted
+	 * @return The encrypted message
+	 */
 	public static String encrypt(String message){
-		String e = "";
+		String encrypted = "";
 		for(char c: message.toCharArray()){
 			if(c >= 'A' && c <= 'M'){
 				char n = (char) (c + 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'N' && c <= 'Z'){
 				char n = (char) (c - 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'a' && c <= 'm'){
 				char n = (char) (c + 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'n' && c <= 'z'){
 				char n = (char) (c - 13);
-				e += n;
+				encrypted += n;
 			} else {
-				e += c;
+				encrypted += c;
 			}
 		}
-		return e;
+		return encrypted;
 	}
 	
+	/**
+	 * Decrypts the given message using the ROT13 cipher. Case is not adjusted.
+	 * 
+	 * @param message - The message to be decrypted
+	 * @return The decrypted message
+	 */
 	public static String decrypt(String message){
-		String e = "";
+		String encrypted = "";
 		for(char c: message.toCharArray()){
 			if(c >= 'A' && c <= 'M'){
 				char n = (char) (c + 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'N' && c <= 'Z'){
 				char n = (char) (c - 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'a' && c <= 'm'){
 				char n = (char) (c + 13);
-				e += n;
+				encrypted += n;
 			} else if(c >= 'n' && c <= 'z'){
 				char n = (char) (c - 13);
-				e += n;
+				encrypted += n;
 			} else {
-				e += c;
+				encrypted += c;
 			}
 		}
-		return e;
+		return encrypted;
 	}
 }
