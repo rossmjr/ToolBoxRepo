@@ -1,4 +1,4 @@
-package ciphers;
+package encryption;
 
 public class Grid {
 
