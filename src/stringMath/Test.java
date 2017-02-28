@@ -13,6 +13,6 @@ public class Test {
 //		System.out.print(math.convertBases(590, 16));
 //		System.out.print(math.decimalToBinary(0));
 //		System.out.print(math.decimalToOctal(98));
-		System.out.println(math);
+		System.out.println(math.convertBases(8476, 16));
 	}
 }
