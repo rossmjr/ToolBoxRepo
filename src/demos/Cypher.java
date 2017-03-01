@@ -2,6 +2,7 @@ package demos;
 
 import encryption.RunningKey;
 import encryption.Sub347;
+import encryption.XOR;
 
 public class Cypher {
 
@@ -21,6 +22,12 @@ public class Cypher {
 		String encrypted = RunningKey.encrypt("HELLOWORLD", "BACONLOVER");
 		System.out.println(encrypted);
 		String decrypted = RunningKey.decrypt("SWNBZTYOLG", "BACONLOVER");
+		System.out.println(decrypted);
+	}
+	public static void testXOR(){
+		String encrypted = XOR.encrypt("Hello", '!');
+		System.out.println(encrypted);
+		String decrypted = XOR.decrypt(encrypted, '!');
 		System.out.println(decrypted);
 	}
 }
