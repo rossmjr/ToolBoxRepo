@@ -10,6 +10,8 @@ public class Test {
 	 */
 	public static void main(String[] args){
 		StringMath math = new StringMath();
+		Equations test = new Equations();
+		test.equation("(5 * 4) + 3");
 //		System.out.print(math.convertBases(590, 16));
 //		System.out.print(math.decimalToBinary(0));
 //		System.out.print(math.decimalToOctal(98));

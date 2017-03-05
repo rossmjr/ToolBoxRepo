@@ -116,6 +116,26 @@ public class StringMath {
 		return hexadecimal;
 	}
 	
+	public int orderOfOperations(String equation){
+		String partOfEquation = "";
+		
+		if(equation.contains("(") || equation.contains(")")){
+			partOfEquation = equation.substring(equation.indexOf("("), equation.indexOf(")"));
+		}else if(equation.contains("^")){
+			
+		}else if(equation.contains("*")){
+			
+		}else if(equation.contains("/")){
+			
+		}else if(equation.contains("+")){
+			
+		}else if(equation.contains("-")){
+			
+		}
+		
+		return 0;
+	}
+	
 	/*
 	 * GUI Geometry and GUI Graphing to be added later if GUI's are figured out.
 	 * If unable to figure out GUI's, something else will be figured out.
