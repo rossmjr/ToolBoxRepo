@@ -3,7 +3,7 @@ package stringMath;
 public class UnitConversions {
 
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -59,7 +59,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -115,7 +115,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -171,7 +171,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -227,7 +227,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -283,7 +283,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -339,7 +339,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -395,7 +395,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -451,7 +451,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
@@ -477,7 +477,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
@@ -503,7 +503,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
@@ -529,7 +529,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -591,7 +591,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -653,7 +653,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -715,7 +715,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -777,7 +777,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -839,7 +839,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -901,7 +901,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -963,7 +963,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1025,7 +1025,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1087,7 +1087,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1125,7 +1125,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1163,7 +1163,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1201,7 +1201,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
@@ -1239,7 +1239,7 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted. This must be a whole number.
+	 * @param num - The double that will be converted.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
