@@ -57,14 +57,14 @@
 										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Meter" />
-												<String fx:value="Kilometer" />
-												<String fx:value="Centimeter" />
-												<String fx:value="Millimeter" />
-												<String fx:value="Mile" />
-												<String fx:value="Yard" />
-												<String fx:value="Feet" />
-												<String fx:value="Inch" />
+												<String fx:value="Meter (m)" />
+												<String fx:value="Kilometer (km)" />
+												<String fx:value="Centimeter (cm)" />
+												<String fx:value="Millimeter (mm)" />
+												<String fx:value="Mile (mi)" />
+												<String fx:value="Yard (yd)" />
+												<String fx:value="Feet (ft)" />
+												<String fx:value="Inch (in)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -76,14 +76,14 @@
 										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Meter" />
-												<String fx:value="Kilometer" />
-												<String fx:value="Centimeter" />
-												<String fx:value="Millimeter" />
-												<String fx:value="Mile" />
-												<String fx:value="Yard" />
-												<String fx:value="Feet" />
-												<String fx:value="Inch" />
+												<String fx:value="Meter (m)" />
+												<String fx:value="Kilometer (km)" />
+												<String fx:value="Centimeter (cm)" />
+												<String fx:value="Millimeter (mm)" />
+												<String fx:value="Mile (mi)" />
+												<String fx:value="Yard (yd)" />
+												<String fx:value="Feet (ft)" />
+												<String fx:value="Inch (in)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -99,9 +99,9 @@
 										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit" />
-												<String fx:value="Celsius" />
-												<String fx:value="Kelvin" />
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celsius (C)" />
+												<String fx:value="Kelvin (K)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -113,9 +113,9 @@
 										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit" />
-												<String fx:value="Celsius" />
-												<String fx:value="Kelvin" />
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celsius (C)" />
+												<String fx:value="Kelvin (K)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -131,34 +131,35 @@
 										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Liter" />
-												<String fx:value="Millileter" />
-												<String fx:value="Gallon" />
-												<String fx:value="Quart" />
-												<String fx:value="Pint" />
-												<String fx:value="Cup" />
-												<String fx:value="Fluid Ounce" />
-												<String fx:value="Table Spoon" />
-												<String fx:value="Tea Spoon" />
+												<String fx:value="Liter (L)" />
+												<String fx:value="Millileter (ml)" />
+												<String fx:value="Gallon (gal)" />
+												<String fx:value="Quart (qt)" />
+												<String fx:value="Pint (pt)" />
+												<String fx:value="Cup (c)" />
+												<String fx:value="Fluid Ounce (Fl Oz)" />
+												<String fx:value="Table Spoon (tbsp)" />
+												<String fx:value="Tea Spoon (tsp)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
 									<TextField fx:id="CVInput" layoutX="200" layoutY="50"
 										promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CV"/>
+									<Button layoutX="245" layoutY="100" text="Convert"
+										onAction="#CV" />
 									<ComboBox fx:id="CVOutBox" prefWidth="110" layoutX="25"
 										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Liter" />
-												<String fx:value="Millileter" />
-												<String fx:value="Gallon" />
-												<String fx:value="Quart" />
-												<String fx:value="Pint" />
-												<String fx:value="Cup" />
-												<String fx:value="Fluid Ounce" />
-												<String fx:value="Table Spoon" />
-												<String fx:value="Tea Spoon" />
+												<String fx:value="Liter (L)" />
+												<String fx:value="Millileter (ml)" />
+												<String fx:value="Gallon (gal)" />
+												<String fx:value="Quart (qt)" />
+												<String fx:value="Pint (pt)" />
+												<String fx:value="Cup (c)" />
+												<String fx:value="Fluid Ounce (Fl Oz)" />
+												<String fx:value="Table Spoon (tbsp)" />
+												<String fx:value="Tea Spoon (tsp)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -170,29 +171,31 @@
 						<Tab text="Convert Weight" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="25" layoutY="50"
-										promptText="Input Unit">
+									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="25"
+										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Kilogram" />
-												<String fx:value="Gram" />
-												<String fx:value="Milligram" />
-												<String fx:value="Pound" />
-												<String fx:value="Ounce" />
+												<String fx:value="Kilogram (kg)" />
+												<String fx:value="Gram (g)" />
+												<String fx:value="Milligram (mg)" />
+												<String fx:value="Pound (lb)" />
+												<String fx:value="Ounce (oz)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CWInput" layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CW" />
-									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="25" layoutY="150"
-										promptText="Output Unit">
+									<TextField fx:id="CWInput" layoutX="200" layoutY="50"
+										promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert"
+										onAction="#CW" />
+									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="25"
+										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Kilogram" />
-												<String fx:value="Gram" />
-												<String fx:value="Milligram" />
-												<String fx:value="Pound" />
-												<String fx:value="Ounce" />
+												<String fx:value="Kilogram (kg)" />
+												<String fx:value="Gram (g)" />
+												<String fx:value="Milligram (mg)" />
+												<String fx:value="Pound (lb)" />
+												<String fx:value="Ounce (oz)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
