@@ -3,13 +3,13 @@ package stringMath;
 public class UnitConversions {
 
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertMeter(double num, String unit){
+	public static String convertMeter(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -43,7 +43,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num * 3.280839895;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -59,13 +59,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertCentimeter(double num, String unit){
+	public static String convertCentimeter(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -99,7 +99,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num / 30.48;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -115,13 +115,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertKilometer(double num, String unit){
+	public static String convertKilometer(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -155,7 +155,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num * 3280.839895;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -171,13 +171,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertMillimeter(double num, String unit){
+	public static String convertMillimeter(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -211,7 +211,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num / 304.8;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -227,13 +227,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertMile(double num, String unit){
+	public static String convertMile(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -267,7 +267,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num * 5280.019685;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -283,13 +283,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertYard(double num, String unit){
+	public static String convertYard(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -323,7 +323,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num * 3;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -339,13 +339,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertFoot(double num, String unit){
+	public static String convertFoot(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -395,13 +395,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertInch(double num, String unit){
+	public static String convertInch(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -441,7 +441,7 @@ public class UnitConversions {
 			return answer;
 		}
 		
-		if(unit.equalsIgnoreCase("foot")){
+		if(unit.equalsIgnoreCase("feet")){
 			convertedUnit = num / 12;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
@@ -451,13 +451,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
 	 */
 	
-	public String convertFahrenheit(double num, String temp){
+	public static String convertFahrenheit(double num, String temp){
 		double convertedTemp = 0;
 		String answer = "";
 		
@@ -477,13 +477,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
 	 */
 	
-	public String convertCelsius(double num, String temp){
+	public static String convertCelsius(double num, String temp){
 		double convertedTemp = 0;
 		String answer = "";
 		
@@ -503,13 +503,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param temp - A String of the temperature the "num" will be converted into.
 	 * This must be the full name of the temperature.
 	 * @return  The "num" in the desired temperature as a String.
 	 */
 	
-	public String convertKelvin(double num, String temp){
+	public static String convertKelvin(double num, String temp){
 		double convertedTemp = 0;
 		String answer = "";
 		
@@ -529,13 +529,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertLiter(double num, String unit){
+	public static String convertLiter(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -591,13 +591,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertMilliliter(double num, String unit){
+	public static String convertMilliliter(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -653,13 +653,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertGallon(double num, String unit){
+	public static String convertGallon(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -715,13 +715,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertQuart(double num, String unit){
+	public static String convertQuart(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -777,13 +777,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertPint(double num, String unit){
+	public static String convertPint(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -839,13 +839,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertCup(double num, String unit){
+	public static String convertCup(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -901,13 +901,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertFluidOunce(double num, String unit){
+	public static String convertFluidOunce(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -963,13 +963,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertTableSpoon(double num, String unit){
+	public static String convertTableSpoon(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1025,13 +1025,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertTeaSpoon(double num, String unit){
+	public static String convertTeaSpoon(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1087,13 +1087,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertKilogram(double num, String unit){
+	public static String convertKilogram(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1125,13 +1125,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertGram(double num, String unit){
+	public static String convertGram(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1163,13 +1163,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertMilligram(double num, String unit){
+	public static String convertMilligram(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1201,13 +1201,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertPound(double num, String unit){
+	public static String convertPound(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		
@@ -1239,13 +1239,13 @@ public class UnitConversions {
 	}
 	
 	/**
-	 * @param num - The double that will be converted.
+	 * @param num - The double that will be converted. This must be a whole number.
 	 * @param unit - A String of the unit the "num" will be converted into.
 	 * This must be the full name of the unit.
 	 * @return  The "num" in the desired unit as a String.
 	 */
 	
-	public String convertOunce(double num, String unit){
+	public static String convertOunce(double num, String unit){
 		double convertedUnit = 0;
 		String answer = "";
 		

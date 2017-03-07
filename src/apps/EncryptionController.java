@@ -2,8 +2,8 @@ package apps;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 
 public class EncryptionController {
 	// Encryptions without keys
@@ -106,7 +106,7 @@ public class EncryptionController {
 		if (RKVMessage.getText() != null && !RKVMessage.getText().isEmpty()) {
 			if (RKVKey.getText() != null && !RKVKey.getText().isEmpty()) {
 				RKVOutput.setText(encryption.RunningKey.encrypt(RKVMessage.getText(), RKVKey.getText()));
-			} else if(RKVKey.getText() != null && RKVKey.getText().isEmpty()){
+			} else if (RKVKey.getText() != null && RKVKey.getText().isEmpty()) {
 				RKVOutput.setText(encryption.RunningKey.encrypt(RKVMessage.getText()));
 				RKVKey.setText(encryption.RunningKey.getKey());
 			}
@@ -146,5 +146,95 @@ public class EncryptionController {
 			}
 		}
 	}
+
+	// MathController
+
+	@FXML
+	private TextField BCOutput;
+	@FXML
+	private TextField BCInput;
+	@FXML
+	private ComboBox<String> BCBox;
+
+	@FXML
+	protected void BC(ActionEvent event) {
+		if (BCInput.getText() != null && !BCInput.getText().isEmpty()) {
+			String s = BCBox.getValue();
+			if (s.equals("Binary")) {
+				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 2).toString());
+			} else if (BCBox.getValue().equals("Octal")) {
+				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 8).toString());
+			} else if (BCBox.getValue().equals("Hexadecimal")) {
+				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 16).toString());
+			}
+		}
+	}
+
+	@FXML
+	private TextField CLOutput;
+	@FXML
+	private TextField CLInput;
+	@FXML
+	private ComboBox<String> CLInBox;
+	@FXML
+	private ComboBox<String> CLOutBox;
+
+	@FXML
+	protected void CL(ActionEvent event) {
+		if (CLInput.getText() != null && !CLInput.getText().isEmpty()) {
+			if (CLInBox.getValue().equals("Meter")) {
+				CLOutput.setText(stringMath.UnitConversions.convertMeter(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Kilometer")) {
+				CLOutput.setText(stringMath.UnitConversions.convertKilometer(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Centimeter")) {
+				CLOutput.setText(stringMath.UnitConversions.convertCentimeter(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Millimeter")) {
+				CLOutput.setText(stringMath.UnitConversions.convertMillimeter(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Mile")) {
+				CLOutput.setText(stringMath.UnitConversions.convertMile(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()).toString());
+			} else if (CLInBox.getValue().equals("Yard")) {
+				CLOutput.setText(stringMath.UnitConversions.convertYard(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Feet")) {
+				CLOutput.setText(stringMath.UnitConversions.convertFoot(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			} else if (CLInBox.getValue().equals("Inch")) {
+				CLOutput.setText(stringMath.UnitConversions.convertInch(Double.parseDouble(CLInput.getText()),
+						CLOutBox.getValue()));
+			}
+		}
+	}
+	
+	
+	@FXML
+	private TextField CTOutput;
+	@FXML
+	private TextField CTInput;
+	@FXML
+	private ComboBox<String> CTInBox;
+	@FXML
+	private ComboBox<String> CTOutBox;
+
+	@FXML
+	protected void CT(ActionEvent event) {
+		if (CTInput.getText() != null && !CTInput.getText().isEmpty()) {
+			if (CTInBox.getValue().equals("Fahrenheit")) {
+				CTOutput.setText(stringMath.UnitConversions.convertFahrenheit(Double.parseDouble(CTInput.getText()),
+						CTOutBox.getValue()));
+			} else if (CTInBox.getValue().equals("Celsius")) {
+				CTOutput.setText(stringMath.UnitConversions.convertCelsius(Double.parseDouble(CTInput.getText()),
+						CTOutBox.getValue()));
+			} else if (CTInBox.getValue().equals("Kelvin")) {
+				CTOutput.setText(stringMath.UnitConversions.convertKelvin(Double.parseDouble(CTInput.getText()),
+						CTOutBox.getValue()));
+			} 
+		}
+	}
+	
 
 }

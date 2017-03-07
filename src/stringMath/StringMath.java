@@ -14,7 +14,7 @@ public class StringMath {
 	 * @return  The "num" in the given "base" as a String.
 	 */
 	
-	public String convertBases(long num, int base){
+	public static String convertBases(long num, int base){
 		if(base == 2){
 			return decimalToBinary(num);
 		}
@@ -30,7 +30,7 @@ public class StringMath {
 		return "";
 	}
 	
-	private String decimalToBinary(long num){
+	private static String decimalToBinary(long num){
 		String remainder = "";
 		String reversedBinary = "";
 		String minus = "";
@@ -60,7 +60,7 @@ public class StringMath {
 		return (minus + (binary = new StringBuffer(reversedBinary).reverse().toString()));
 	}
 	
-	private String decimalToOctal(long num){
+	private static String decimalToOctal(long num){
 		long maxOctal = 9223372036854775807L;
 		if(num > maxOctal){
 			System.out.println("The number " + num + " cannot be greater than 9223372036854775807.");
@@ -86,7 +86,7 @@ public class StringMath {
 		return convertedOctal;
 	}
 	
-	private String decimalToHexadecimal(double num){
+	private static String decimalToHexadecimal(double num){
 		String reversedHexadecimal = "";
 		
 		while((int)num > 0){
