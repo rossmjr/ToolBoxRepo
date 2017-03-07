@@ -10,6 +10,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
+<?import javafx.scene.control.Label?>
 
 <TabPane fx:controller="apps.EncryptionController" xmlns:fx="http://javafx.com/fxml/1"
 	prefHeight="550" prefWidth="610">
@@ -215,6 +216,8 @@
 						<Tab text="ROT13" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="100" layoutY="20" 
+									text="ROT13 is a substitution cipher where char values are modified by 13" />
 									<TextField fx:id="RMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<Button layoutX="195" layoutY="100" text="Encrypt"
@@ -229,6 +232,8 @@
 						<Tab text="Beaufort" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="150" layoutY="20" 
+									text="Beaufort uses a key of any length to encrypt" />
 									<TextField fx:id="BMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<TextField fx:id="BKey" prefWidth="300" layoutX="150"
@@ -245,6 +250,8 @@
 						<Tab text="Sub347" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="100" layoutY="20" 
+									text="Sub347 is similar to ROT13, but uses a sightly different algorithm" />
 									<TextField fx:id="SMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<Button layoutX="195" layoutY="100" text="Encrypt"
@@ -259,6 +266,8 @@
 						<Tab text="RunningKeyVigenere" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="100" layoutY="20" 
+									text="Running Key Vigenere uses a key of the same length as its message" />
 									<TextField fx:id="RKVMessage" prefWidth="300"
 										layoutX="150" layoutY="50" promptText="Message" />
 									<TextField fx:id="RKVKey" prefWidth="300" layoutX="150"
@@ -275,6 +284,8 @@
 						<Tab text="XOR" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="150" layoutY="20" 
+									text="XOR uses a single character as a key to encrypt" />
 									<TextField fx:id="XMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<TextField fx:id="XKey" prefWidth="300" layoutX="150"
@@ -291,6 +302,8 @@
 						<Tab text="Grid" closable="false">
 							<AnchorPane>
 								<children>
+									<Label layoutX="150" layoutY="20" 
+									text="Grid uses a square 2 dimensional array to encrypt" />
 									<TextField fx:id="GMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<Button layoutX="195" layoutY="100" text="Encrypt"
