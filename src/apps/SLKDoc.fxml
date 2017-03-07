@@ -11,8 +11,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<TabPane fx:controller="apps.EncryptionController" xmlns:fx="http://javafx.com/fxml/1" prefHeight="550"
-	prefWidth="610">
+<TabPane fx:controller="apps.EncryptionController" xmlns:fx="http://javafx.com/fxml/1"
+	prefHeight="550" prefWidth="610">
 	<tabs>
 		<Tab text="Math" closable="false">
 			<content>
@@ -21,7 +21,8 @@
 						<Tab text="Base Conversion" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox layoutX="25" layoutY="90" promptText="Output Format">
+									<ComboBox fx:id="BCBox" layoutX="25" layoutY="90"
+										promptText="Output Format">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Binary" />
@@ -30,9 +31,11 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField layoutX="200" layoutY="50" promptText="Input(in decimal)" />
-									<Button layoutX="245" layoutY="100" text="Convert" />
-									<TextField id="BCOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="BCInput" layoutX="200" layoutY="50"
+										promptText="Input(in decimal)" />
+									<Button layoutX="245" layoutY="100" text="Convert"
+										onAction="#BC" />
+									<TextField fx:id="BCOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -50,39 +53,39 @@
 						<Tab text="Convert Length" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="25" layoutY="50"
 										promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Meter (m)" />
-												<String fx:value="Kilometer (km)" />
-												<String fx:value="Centimeter (cm)" />
-												<String fx:value="Millimeter (mm)" />
-												<String fx:value="Mile (mi)" />
-												<String fx:value="Yard (yd)" />
-												<String fx:value="Feet (ft)" />
-												<String fx:value="Inch (in)" />
+												<String fx:value="Meter" />
+												<String fx:value="Kilometer" />
+												<String fx:value="Centimeter" />
+												<String fx:value="Millimeter" />
+												<String fx:value="Mile" />
+												<String fx:value="Yard" />
+												<String fx:value="Feet" />
+												<String fx:value="Inch" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" />
-									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+									<TextField fx:id="CLInput" layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CL" />
+									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="25" layoutY="150"
 										promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Meter (m)" />
-												<String fx:value="Kilometer (km)" />
-												<String fx:value="Centimeter (cm)" />
-												<String fx:value="Millimeter (mm)" />
-												<String fx:value="Mile (mi)" />
-												<String fx:value="Yard (yd)" />
-												<String fx:value="Feet (ft)" />
-												<String fx:value="Inch (in)" />
+												<String fx:value="Meter" />
+												<String fx:value="Kilometer" />
+												<String fx:value="Centimeter" />
+												<String fx:value="Millimeter" />
+												<String fx:value="Mile" />
+												<String fx:value="Yard" />
+												<String fx:value="Feet" />
+												<String fx:value="Inch" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField id="CLOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="CLOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -90,29 +93,29 @@
 						<Tab text="Convert Temperature" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="25" layoutY="50"
 										promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit (F)" />
-												<String fx:value="Celcius (C)" />
-												<String fx:value="Kelvin (K)" />
+												<String fx:value="Fahrenheit" />
+												<String fx:value="Celsius" />
+												<String fx:value="Kelvin" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" />
-									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+									<TextField fx:id="CTInput" layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CT"/>
+									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="25" layoutY="150"
 										promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit (F)" />
-												<String fx:value="Celcius (C)" />
-												<String fx:value="Kelvin (K)" />
+												<String fx:value="Fahrenheit" />
+												<String fx:value="Celsius" />
+												<String fx:value="Kelvin" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField id="CTOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="CTOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -199,7 +202,7 @@
 		</Tab>
 		<Tab text="Espionage" closable="false">
 			<content>
-				<TabPane  xmlns:fx="http://javafx.com/fxml/1">
+				<TabPane xmlns:fx="http://javafx.com/fxml/1">
 					<tabs>
 						<Tab text="ROT13" closable="false">
 							<AnchorPane>
