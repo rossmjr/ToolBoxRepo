@@ -13,6 +13,8 @@ public class RunningKey {
 	 * @return - the encrypted message as a string.
 	 */
 	public static String encrypt(String input, String key){
+		input = input.toUpperCase();
+		key = key.toUpperCase();
 		String output = input;
 		StringBuilder sb = new StringBuilder();
 		if(input.length() == key.length()){
@@ -28,7 +30,6 @@ public class RunningKey {
 				sb.append((char)(temp3));
 			}
 		}
-//		sb.append("\n" + key);
 		output = sb.toString();
 		return output;
 	}
@@ -38,6 +39,7 @@ public class RunningKey {
 	 * @return - the encrypted message as a string, followed by a new line with the randomly generated key.
 	 */
 	public static String encrypt(String input){
+		input = input.toUpperCase();
 		String output = input;
 		Random rand = new Random();
 		StringBuilder sb = new StringBuilder();
@@ -56,6 +58,8 @@ public class RunningKey {
 	 * @return - the encrypted message as a string, followed by a new line with the randomly generated key.
 	 */
 	public static String decrypt(String input, String key){
+		input = input.toUpperCase();
+		key = key.toUpperCase();
 		String output = input;
 		StringBuilder sb = new StringBuilder();
 		if(input.length() == key.length()){

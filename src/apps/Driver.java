@@ -11,7 +11,6 @@ public class Driver extends Application{
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-//			Parent root = FXMLLoader.load(getClass().getResource("Demo.fxml"));
 			Parent root = FXMLLoader.load(getClass().getResource("SLKDoc.fxml"));
 			
 			Scene scene = new Scene(root);
