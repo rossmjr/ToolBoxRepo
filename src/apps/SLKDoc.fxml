@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<TabPane fx:controller="apps.EncryptionController" xmlns:fx="http://javafx.com/fxml/1" prefHeight="550"
+	prefWidth="610">
+	<tabs>
+		<Tab text="Math" closable="false">
+			<content>
+				<TabPane xmlns:fx="http://javafx.com/fxml/1">
+					<tabs>
+						<Tab text="Base Conversion" closable="false">
+							<AnchorPane>
+								<children>
+									<ComboBox layoutX="25" layoutY="90" promptText="Output Format">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Binary" />
+												<String fx:value="Octal" />
+												<String fx:value="Hexadecimal" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField layoutX="200" layoutY="50" promptText="Input(in decimal)" />
+									<Button layoutX="245" layoutY="100" text="Convert" />
+									<TextField id="BCOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="String Math" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Solve" />
+									<TextField id="SMOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Convert Length" closable="false">
+							<AnchorPane>
+								<children>
+									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+										promptText="Input Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Meter (m)" />
+												<String fx:value="Kilometer (km)" />
+												<String fx:value="Centimeter (cm)" />
+												<String fx:value="Millimeter (mm)" />
+												<String fx:value="Mile (mi)" />
+												<String fx:value="Yard (yd)" />
+												<String fx:value="Feet (ft)" />
+												<String fx:value="Inch (in)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" />
+									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+										promptText="Output Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Meter (m)" />
+												<String fx:value="Kilometer (km)" />
+												<String fx:value="Centimeter (cm)" />
+												<String fx:value="Millimeter (mm)" />
+												<String fx:value="Mile (mi)" />
+												<String fx:value="Yard (yd)" />
+												<String fx:value="Feet (ft)" />
+												<String fx:value="Inch (in)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField id="CLOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Convert Temperature" closable="false">
+							<AnchorPane>
+								<children>
+									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+										promptText="Input Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celcius (C)" />
+												<String fx:value="Kelvin (K)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" />
+									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+										promptText="Output Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celcius (C)" />
+												<String fx:value="Kelvin (K)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField id="CTOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Convert Volume" closable="false">
+							<AnchorPane>
+								<children>
+									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+										promptText="Input Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Liter (L)" />
+												<String fx:value="Millileter (ml)" />
+												<String fx:value="Gallon (gal)" />
+												<String fx:value="Quart (qt)" />
+												<String fx:value="Pint (pt)" />
+												<String fx:value="Cup (c)" />
+												<String fx:value="Fluid Ounce (Fl Oz)" />
+												<String fx:value="Table Spoon (tbsp)" />
+												<String fx:value="Tea Spoon (tsp)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" />
+									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+										promptText="Output Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Liter (L)" />
+												<String fx:value="Millileter (ml)" />
+												<String fx:value="Gallon (gal)" />
+												<String fx:value="Quart (qt)" />
+												<String fx:value="Pint (pt)" />
+												<String fx:value="Cup (c)" />
+												<String fx:value="Fluid Ounce (Fl Oz)" />
+												<String fx:value="Table Spoon (tbsp)" />
+												<String fx:value="Tea Spoon (tsp)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField id="CVOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Convert Weight" closable="false">
+							<AnchorPane>
+								<children>
+									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+										promptText="Input Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Kilogram (kg)" />
+												<String fx:value="Gram (g)" />
+												<String fx:value="Milligram (mg)" />
+												<String fx:value="Pound (lb)" />
+												<String fx:value="Ounce (oz)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" />
+									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+										promptText="Output Unit">
+										<items>
+											<FXCollections fx:factory="observableArrayList">
+												<String fx:value="Kilogram (kg)" />
+												<String fx:value="Gram (g)" />
+												<String fx:value="Milligram (mg)" />
+												<String fx:value="Pound (lb)" />
+												<String fx:value="Ounce (oz)" />
+											</FXCollections>
+										</items>
+									</ComboBox>
+									<TextField id="CWOutput" layoutX="200" layoutY="150"
+										text="Output" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+					</tabs>
+				</TabPane>
+			</content>
+		</Tab>
+		<Tab text="Espionage" closable="false">
+			<content>
+				<TabPane  xmlns:fx="http://javafx.com/fxml/1">
+					<tabs>
+						<Tab text="ROT13" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="RMessage" prefWidth="300" layoutX="150"
+										layoutY="50" promptText="Message" />
+									<Button layoutX="195" layoutY="100" text="Encrypt"
+										onAction="#encryptR" />
+									<Button layoutX="330" layoutY="100" text="Decrypt"
+										onAction="#decryptR" />
+									<TextField prefWidth="300" fx:id="ROutput" layoutX="150"
+										layoutY="150" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Beaufort" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="BMessage" prefWidth="300" layoutX="150"
+										layoutY="50" promptText="Message" />
+									<TextField fx:id="BKey" prefWidth="300" layoutX="150"
+										layoutY="80" promptText="Key" />
+									<Button layoutX="195" layoutY="120" text="Encrypt"
+										onAction="#encryptB" />
+									<Button layoutX="330" layoutY="120" text="Decrypt"
+										onAction="#decryptB" />
+									<TextField prefWidth="300" fx:id="BOutput" layoutX="150"
+										layoutY="170" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Sub347" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="SMessage" prefWidth="300" layoutX="150"
+										layoutY="50" promptText="Message" />
+									<Button layoutX="195" layoutY="100" text="Encrypt"
+										onAction="#encryptS" />
+									<Button layoutX="330" layoutY="100" text="Decrypt"
+										onAction="#decryptS" />
+									<TextField prefWidth="300" fx:id="SOutput" layoutX="150"
+										layoutY="150" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="RunningKeyVigenere" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="RKVMessage" prefWidth="300"
+										layoutX="150" layoutY="50" promptText="Message" />
+									<TextField fx:id="RKVKEY" prefWidth="300" layoutX="150"
+										layoutY="80" promptText="Key" />
+									<Button layoutX="195" layoutY="120" text="Encrypt"
+										onAction="#encryptRKV" />
+									<Button layoutX="330" layoutY="120" text="Decrypt"
+										onAction="#decryptRKV" />
+									<TextField prefWidth="300" fx:id="RKVOutput" layoutX="150"
+										layoutY="170" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="XOR" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="XMessage" prefWidth="300" layoutX="150"
+										layoutY="50" promptText="Message" />
+									<TextField fx:id="XKey" prefWidth="300" layoutX="150"
+										layoutY="80" promptText="Key" />
+									<Button layoutX="195" layoutY="120" text="Encrypt"
+										onAction="#encryptX" />
+									<Button layoutX="330" layoutY="120" text="Decrypt"
+										onAction="#decryptX" />
+									<TextField prefWidth="300" fx:id="XOutput" layoutX="150"
+										layoutY="170" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+						<Tab text="Grid" closable="false">
+							<AnchorPane>
+								<children>
+									<TextField fx:id="GMessage" prefWidth="300" layoutX="150"
+										layoutY="50" promptText="Message" />
+									<Button layoutX="195" layoutY="100" text="Encrypt"
+										onAction="#encryptG" />
+									<Button layoutX="330" layoutY="100" text="Decrypt"
+										onAction="#decryptG" />
+									<TextField prefWidth="300" fx:id="GOutput" layoutX="150"
+										layoutY="150" text="Result" editable="false" />
+								</children>
+							</AnchorPane>
+						</Tab>
+					</tabs>
+				</TabPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>
+
