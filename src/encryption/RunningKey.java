@@ -3,6 +3,9 @@ package encryption;
 import java.util.Random;
 
 public class RunningKey {
+	
+	private static String key;
+	
 	/**
 	 * Encrypts the input with the given key, using a Running Key Vigenere Cipher, case is adjusted to uppercase.
 	 * @param input - the message to be encrypted entered as a string
@@ -24,7 +27,8 @@ public class RunningKey {
 				}
 				sb.append((char)(temp3));
 			}
-		}sb.append("\n" + key);
+		}
+//		sb.append("\n" + key);
 		output = sb.toString();
 		return output;
 	}
@@ -41,13 +45,14 @@ public class RunningKey {
 			sb.append((char)(rand.nextInt(26)+65));
 		}
 		String key = sb.toString();
+		setKey(key);
 		output = encrypt(input, key);
 		return output;
 	}	
 	/**
 	 * Decrypts the input with the given key, using a Running Key Vigenere Cipher, case is adjusted to uppercase.
 	 * @param input - the message to be decrypted entered as a string.
-	 * @param key - the key by which to decrypte entered as a string.
+	 * @param key - the key by which to decrypted entered as a string.
 	 * @return - the encrypted message as a string, followed by a new line with the randomly generated key.
 	 */
 	public static String decrypt(String input, String key){
@@ -68,5 +73,11 @@ public class RunningKey {
 		}
 		output = sb.toString();
 		return output;
+	}
+	public static String getKey() {
+		return key;
+	}
+	private static void setKey(String keyy) {
+		key = keyy;
 	}
 }
