@@ -53,8 +53,8 @@
 						<Tab text="Convert Length" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="25" layoutY="50"
-										promptText="Input Unit">
+									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="25"
+										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Meter" />
@@ -68,10 +68,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLInput" layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CL" />
-									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="25" layoutY="150"
-										promptText="Output Unit">
+									<TextField fx:id="CLInput" layoutX="200" layoutY="50"
+										promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert"
+										onAction="#CL" />
+									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="25"
+										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Meter" />
@@ -93,8 +95,8 @@
 						<Tab text="Convert Temperature" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="25" layoutY="50"
-										promptText="Input Unit">
+									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="25"
+										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Fahrenheit" />
@@ -103,10 +105,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CTInput" layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CT"/>
-									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="25" layoutY="150"
-										promptText="Output Unit">
+									<TextField fx:id="CTInput" layoutX="200" layoutY="50"
+										promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert"
+										onAction="#CT" />
+									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="25"
+										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Fahrenheit" />
@@ -123,41 +127,42 @@
 						<Tab text="Convert Volume" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
-										promptText="Input Unit">
+									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="25"
+										layoutY="50" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Liter (L)" />
-												<String fx:value="Millileter (ml)" />
-												<String fx:value="Gallon (gal)" />
-												<String fx:value="Quart (qt)" />
-												<String fx:value="Pint (pt)" />
-												<String fx:value="Cup (c)" />
-												<String fx:value="Fluid Ounce (Fl Oz)" />
-												<String fx:value="Table Spoon (tbsp)" />
-												<String fx:value="Tea Spoon (tsp)" />
+												<String fx:value="Liter" />
+												<String fx:value="Millileter" />
+												<String fx:value="Gallon" />
+												<String fx:value="Quart" />
+												<String fx:value="Pint" />
+												<String fx:value="Cup" />
+												<String fx:value="Fluid Ounce" />
+												<String fx:value="Table Spoon" />
+												<String fx:value="Tea Spoon" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" />
-									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
-										promptText="Output Unit">
+									<TextField fx:id="CVInput" layoutX="200" layoutY="50"
+										promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CV"/>
+									<ComboBox fx:id="CVOutBox" prefWidth="110" layoutX="25"
+										layoutY="150" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Liter (L)" />
-												<String fx:value="Millileter (ml)" />
-												<String fx:value="Gallon (gal)" />
-												<String fx:value="Quart (qt)" />
-												<String fx:value="Pint (pt)" />
-												<String fx:value="Cup (c)" />
-												<String fx:value="Fluid Ounce (Fl Oz)" />
-												<String fx:value="Table Spoon (tbsp)" />
-												<String fx:value="Tea Spoon (tsp)" />
+												<String fx:value="Liter" />
+												<String fx:value="Millileter" />
+												<String fx:value="Gallon" />
+												<String fx:value="Quart" />
+												<String fx:value="Pint" />
+												<String fx:value="Cup" />
+												<String fx:value="Fluid Ounce" />
+												<String fx:value="Table Spoon" />
+												<String fx:value="Tea Spoon" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField id="CVOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="CVOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -165,33 +170,33 @@
 						<Tab text="Convert Weight" closable="false">
 							<AnchorPane>
 								<children>
-									<ComboBox prefWidth="110" layoutX="25" layoutY="50"
+									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="25" layoutY="50"
 										promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Kilogram (kg)" />
-												<String fx:value="Gram (g)" />
-												<String fx:value="Milligram (mg)" />
-												<String fx:value="Pound (lb)" />
-												<String fx:value="Ounce (oz)" />
+												<String fx:value="Kilogram" />
+												<String fx:value="Gram" />
+												<String fx:value="Milligram" />
+												<String fx:value="Pound" />
+												<String fx:value="Ounce" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert" />
-									<ComboBox prefWidth="110" layoutX="25" layoutY="150"
+									<TextField fx:id="CWInput" layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Convert" onAction="#CW" />
+									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="25" layoutY="150"
 										promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Kilogram (kg)" />
-												<String fx:value="Gram (g)" />
-												<String fx:value="Milligram (mg)" />
-												<String fx:value="Pound (lb)" />
-												<String fx:value="Ounce (oz)" />
+												<String fx:value="Kilogram" />
+												<String fx:value="Gram" />
+												<String fx:value="Milligram" />
+												<String fx:value="Pound" />
+												<String fx:value="Ounce" />
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField id="CWOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="CWOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -253,7 +258,7 @@
 								<children>
 									<TextField fx:id="RKVMessage" prefWidth="300"
 										layoutX="150" layoutY="50" promptText="Message" />
-									<TextField fx:id="RKVKEY" prefWidth="300" layoutX="150"
+									<TextField fx:id="RKVKey" prefWidth="300" layoutX="150"
 										layoutY="80" promptText="Key" />
 									<Button layoutX="195" layoutY="120" text="Encrypt"
 										onAction="#encryptRKV" />

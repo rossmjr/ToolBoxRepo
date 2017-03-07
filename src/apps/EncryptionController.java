@@ -236,5 +236,78 @@ public class EncryptionController {
 		}
 	}
 	
+	@FXML
+	private TextField CVOutput;
+	@FXML
+	private TextField CVInput;
+	@FXML
+	private ComboBox<String> CVInBox;
+	@FXML
+	private ComboBox<String> CVOutBox;
+
+	@FXML
+	protected void CV(ActionEvent event) {
+		if (CVInput.getText() != null && !CVInput.getText().isEmpty()) {
+			if (CVInBox.getValue().equals("Liter")) {
+				CVOutput.setText(stringMath.UnitConversions.convertLiter(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Millileter")) {
+				CVOutput.setText(stringMath.UnitConversions.convertMilliliter(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Gallon")) {
+				CVOutput.setText(stringMath.UnitConversions.convertGallon(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Quart")) {
+				CVOutput.setText(stringMath.UnitConversions.convertQuart(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Pint")) {
+				CVOutput.setText(stringMath.UnitConversions.convertPint(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Cup")) {
+				CVOutput.setText(stringMath.UnitConversions.convertCup(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Fluid Ounce")) {
+				CVOutput.setText(stringMath.UnitConversions.convertFluidOunce(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Table Spoon")) {
+				CVOutput.setText(stringMath.UnitConversions.convertTableSpoon(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} else if (CVInBox.getValue().equals("Tea Spoon")) {
+				CVOutput.setText(stringMath.UnitConversions.convertTeaSpoon(Double.parseDouble(CVInput.getText()),
+						CVOutBox.getValue()));
+			} 
+		}
+	}
+	
+	@FXML
+	private TextField CWOutput;
+	@FXML
+	private TextField CWInput;
+	@FXML
+	private ComboBox<String> CWInBox;
+	@FXML
+	private ComboBox<String> CWOutBox;
+
+	@FXML
+	protected void CW(ActionEvent event) {
+		if (CWInput.getText() != null && !CWInput.getText().isEmpty()) {
+			if (CWInBox.getValue().equals("Kilogram")) {
+				CWOutput.setText(stringMath.UnitConversions.convertKilogram(Double.parseDouble(CWInput.getText()),
+						CWOutBox.getValue()));
+			} else if (CWInBox.getValue().equals("Gram")) {
+				CWOutput.setText(stringMath.UnitConversions.convertGram(Double.parseDouble(CWInput.getText()),
+						CWOutBox.getValue()));
+			} else if (CWInBox.getValue().equals("Milligram")) {
+				CWOutput.setText(stringMath.UnitConversions.convertMilligram(Double.parseDouble(CWInput.getText()),
+						CWOutBox.getValue()));
+			} else if (CWInBox.getValue().equals("Pound")) {
+				CWOutput.setText(stringMath.UnitConversions.convertPound(Double.parseDouble(CWInput.getText()),
+						CWOutBox.getValue()));
+			} else if (CWInBox.getValue().equals("Ounce")) {
+				CWOutput.setText(stringMath.UnitConversions.convertOunce(Double.parseDouble(CWInput.getText()),
+						CWOutBox.getValue()));
+			} 
+		}
+	}
 
 }
