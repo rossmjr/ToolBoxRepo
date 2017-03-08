@@ -462,13 +462,13 @@ public class UnitConversions {
 		String answer = "";
 		
 		if(temp.equalsIgnoreCase("kelvin")){
-			convertedTemp = (((num - 32) * (5/9)) + 273.15);
+			convertedTemp = (((num - 32) * ((double)5/(double)9)) + 273.15);
 			answer += Double.valueOf(convertedTemp);
 			return answer;
 		}
 		
 		if(temp.equalsIgnoreCase("celsius")){
-			convertedTemp = ((num - 32) * (5/9));
+			convertedTemp = ((num - 32) * ((double)5/(double)9));
 			answer += Double.valueOf(convertedTemp);
 			return answer;
 		}
@@ -494,7 +494,7 @@ public class UnitConversions {
 		}
 		
 		if(temp.equalsIgnoreCase("fahrenheit")){
-			convertedTemp = (num * (9/5)) + 32;
+			convertedTemp = (num * ((double)9/(double)5)) + 32;
 			answer += Double.valueOf(convertedTemp);
 			return answer;
 		}
@@ -514,7 +514,7 @@ public class UnitConversions {
 		String answer = "";
 		
 		if(temp.equalsIgnoreCase("fahrenheit")){
-			convertedTemp = (((num - 273.15) * (9/5)) + 32);
+			convertedTemp = (((num - 273.15) * ((double)9/(double)5)) + 32);
 			answer += Double.valueOf(convertedTemp);
 			return answer;
 		}

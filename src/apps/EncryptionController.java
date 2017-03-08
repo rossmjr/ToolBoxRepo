@@ -161,11 +161,11 @@ public class EncryptionController {
 		if (BCInput.getText() != null && !BCInput.getText().isEmpty()) {
 			String s = BCBox.getValue();
 			if (s.equals("Binary")) {
-				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 2).toString());
+				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 2).toString());
 			} else if (BCBox.getValue().equals("Octal")) {
-				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 8).toString());
+				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 8).toString());
 			} else if (BCBox.getValue().equals("Hexadecimal")) {
-				BCOutput.setText(stringMath.StringMath.convertBases(Long.parseLong(BCInput.getText()), 16).toString());
+				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 16).toString());
 			}
 		}
 	}
