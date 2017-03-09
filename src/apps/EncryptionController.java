@@ -162,8 +162,8 @@ public class EncryptionController {
 	@FXML
 	protected void BC(ActionEvent event) {
 		if (BCInput.getText() != null && !BCInput.getText().isEmpty()) {
-				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 2).toString());
 			if (BCBox.getValue().equals("Binary")) {
+				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 2).toString());
 			} else if (BCBox.getValue().equals("Octal")) {
 				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 8).toString());
 			} else if (BCBox.getValue().equals("Hexadecimal")) {
