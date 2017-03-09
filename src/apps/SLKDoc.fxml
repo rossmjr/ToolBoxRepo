@@ -11,15 +11,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
+
 <TabPane fx:controller="apps.EncryptionController" xmlns:fx="http://javafx.com/fxml/1"
 	prefHeight="550" prefWidth="610">
 	<tabs>
-		<Tab text="Math" closable="false">
+		<Tab styleClass="tab" text="Math" closable="false">
 			<content>
-				<TabPane xmlns:fx="http://javafx.com/fxml/1">
+				<TabPane styleClass="Pane" xmlns:fx="http://javafx.com/fxml/1">
 					<tabs>
-						<Tab text="Base Conversion" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Base Conversion" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<ComboBox fx:id="BCBox" layoutX="25" layoutY="90"
 										promptText="Output Format">
@@ -40,18 +41,18 @@
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="String Math" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="String Math" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="SMInput" layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Solve" onAction="#SM"/>
+									<Button styleClass="button" layoutX="245" layoutY="100" text="Solve" onAction="#SM"/>
 									<TextField fx:id="SMOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Convert Length" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Convert Length" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="25"
 										layoutY="50" promptText="Input Unit">
@@ -70,7 +71,7 @@
 									</ComboBox>
 									<TextField fx:id="CLInput" layoutX="200" layoutY="50"
 										promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert"
+									<Button styleClass="button" layoutX="245" layoutY="100" text="Convert"
 										onAction="#CL" />
 									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="25"
 										layoutY="150" promptText="Output Unit">
@@ -92,8 +93,8 @@
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Convert Temperature" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Convert Temperature" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="25"
 										layoutY="50" promptText="Input Unit">
@@ -107,7 +108,7 @@
 									</ComboBox>
 									<TextField fx:id="CTInput" layoutX="200" layoutY="50"
 										promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert"
+									<Button styleClass="button" layoutX="245" layoutY="100" text="Convert"
 										onAction="#CT" />
 									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="25"
 										layoutY="150" promptText="Output Unit">
@@ -124,8 +125,8 @@
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Convert Volume" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Convert Volume" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="25"
 										layoutY="50" promptText="Input Unit">
@@ -145,7 +146,7 @@
 									</ComboBox>
 									<TextField fx:id="CVInput" layoutX="200" layoutY="50"
 										promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert"
+									<Button styleClass="button" layoutX="245" layoutY="100" text="Convert"
 										onAction="#CV" />
 									<ComboBox fx:id="CVOutBox" prefWidth="110" layoutX="25"
 										layoutY="150" promptText="Output Unit">
@@ -168,8 +169,8 @@
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Convert Weight" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Convert Weight" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="25"
 										layoutY="50" promptText="Input Unit">
@@ -185,7 +186,7 @@
 									</ComboBox>
 									<TextField fx:id="CWInput" layoutX="200" layoutY="50"
 										promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Convert"
+									<Button styleClass="button" layoutX="245" layoutY="100" text="Convert"
 										onAction="#CW" />
 									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="25"
 										layoutY="150" promptText="Output Unit">
@@ -208,96 +209,96 @@
 				</TabPane>
 			</content>
 		</Tab>
-		<Tab text="Espionage" closable="false">
+		<Tab styleClass="tab" text="Espionage" closable="false">
 			<content>
-				<TabPane xmlns:fx="http://javafx.com/fxml/1">
+				<TabPane styleClass="Pane" xmlns:fx="http://javafx.com/fxml/1">
 					<tabs>
-						<Tab text="ROT13" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="ROT13" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="RMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
-									<Button layoutX="195" layoutY="100" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="100" text="Encrypt"
 										onAction="#encryptR" />
-									<Button layoutX="330" layoutY="100" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="100" text="Decrypt"
 										onAction="#decryptR" />
 									<TextField prefWidth="300" fx:id="ROutput" layoutX="150"
 										layoutY="150" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Beaufort" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Beaufort" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="BMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<TextField fx:id="BKey" prefWidth="300" layoutX="150"
 										layoutY="80" promptText="Key" />
-									<Button layoutX="195" layoutY="120" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="120" text="Encrypt"
 										onAction="#encryptB" />
-									<Button layoutX="330" layoutY="120" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="120" text="Decrypt"
 										onAction="#decryptB" />
 									<TextField prefWidth="300" fx:id="BOutput" layoutX="150"
 										layoutY="170" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Sub347" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Sub347" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="SMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
-									<Button layoutX="195" layoutY="100" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="100" text="Encrypt"
 										onAction="#encryptS" />
-									<Button layoutX="330" layoutY="100" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="100" text="Decrypt"
 										onAction="#decryptS" />
 									<TextField prefWidth="300" fx:id="SOutput" layoutX="150"
 										layoutY="150" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="RunningKeyVigenere" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="RunningKeyVigenere" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="RKVMessage" prefWidth="300"
 										layoutX="150" layoutY="50" promptText="Message" />
 									<TextField fx:id="RKVKey" prefWidth="300" layoutX="150"
 										layoutY="80" promptText="Key" />
-									<Button layoutX="195" layoutY="120" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="120" text="Encrypt"
 										onAction="#encryptRKV" />
-									<Button layoutX="330" layoutY="120" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="120" text="Decrypt"
 										onAction="#decryptRKV" />
 									<TextField prefWidth="300" fx:id="RKVOutput" layoutX="150"
 										layoutY="170" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="XOR" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="XOR" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="XMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
 									<TextField fx:id="XKey" prefWidth="300" layoutX="150"
 										layoutY="80" promptText="Key" />
-									<Button layoutX="195" layoutY="120" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="120" text="Encrypt"
 										onAction="#encryptX" />
-									<Button layoutX="330" layoutY="120" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="120" text="Decrypt"
 										onAction="#decryptX" />
 									<TextField prefWidth="300" fx:id="XOutput" layoutX="150"
 										layoutY="170" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
-						<Tab text="Grid" closable="false">
-							<AnchorPane>
+						<Tab styleClass="tab" text="Grid" closable="false">
+							<AnchorPane styleClass="Pane">
 								<children>
 									<TextField fx:id="GMessage" prefWidth="300" layoutX="150"
 										layoutY="50" promptText="Message" />
-									<Button layoutX="195" layoutY="100" text="Encrypt"
+									<Button styleClass="button" layoutX="195" layoutY="100" text="Encrypt"
 										onAction="#encryptG" />
-									<Button layoutX="330" layoutY="100" text="Decrypt"
+									<Button styleClass="button" layoutX="330" layoutY="100" text="Decrypt"
 										onAction="#decryptG" />
-									<TextField prefWidth="300" fx:id="GOutput" layoutX="150"
+									<TextField  prefWidth="300" fx:id="GOutput" layoutX="150"
 										layoutY="150" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
