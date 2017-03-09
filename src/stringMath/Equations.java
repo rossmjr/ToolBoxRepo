@@ -87,10 +87,10 @@ public class Equations {
 			output.add(operators.pop());
 		}
 		
-		System.out.println(solve());
+//		System.out.println(solve());
 	}
 	
-	private String solve(){
+	public String solve(){
 		Stack<Double> solvingEquation = new Stack<>();
 		Iterator<String> postfix = output.iterator();
 		String tokens = "";
