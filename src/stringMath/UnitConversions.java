@@ -55,6 +55,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("meter")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -109,6 +113,10 @@ public class UnitConversions {
 			convertedUnit = num / 2.54;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("centimeter")){
+			return answer += Double.valueOf(num);
 		}
 		
 		return answer;
@@ -167,6 +175,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("kilometer")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -221,6 +233,10 @@ public class UnitConversions {
 			convertedUnit = num / 25.4;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("millimeter")){
+			return answer += Double.valueOf(num);
 		}
 		
 		return answer;
@@ -279,6 +295,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("mile")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -333,6 +353,10 @@ public class UnitConversions {
 			convertedUnit = num * 36;
 			answer += Double.valueOf(convertedUnit);
 			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("yard")){
+			return answer += Double.valueOf(num);
 		}
 		
 		return answer;
@@ -391,6 +415,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("feet")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -447,6 +475,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("inch")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -471,6 +503,10 @@ public class UnitConversions {
 			convertedTemp = ((num - 32) * ((double)5/(double)9));
 			answer += Double.valueOf(convertedTemp);
 			return answer;
+		}
+		
+		if(temp.equalsIgnoreCase("fahrenheit")){	
+			return answer += Double.valueOf(num);
 		}
 		
 		return answer;
@@ -499,6 +535,10 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(temp.equalsIgnoreCase("celsius")){
+			return answer += Double.valueOf(num);
+		}
+		
 		return answer;
 	}
 	
@@ -523,6 +563,10 @@ public class UnitConversions {
 			convertedTemp = num - 273.15;
 			answer += Double.valueOf(convertedTemp);
 			return answer;
+		}
+		
+		if(temp.equalsIgnoreCase("kelvin")){
+			return answer += Double.valueOf(num);
 		}
 		
 		return answer;
@@ -584,6 +628,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("tea Spoon") || unit.equalsIgnoreCase("teaSpoon")){
 			convertedUnit = num * 202.88423183;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("liter")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -649,6 +698,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("milliliter")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -708,6 +762,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("tea Spoon") || unit.equalsIgnoreCase("teaSpoon")){
 			convertedUnit = num * 768;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("gallon")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -773,6 +832,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("quart")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -832,6 +896,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("tea Spoon") || unit.equalsIgnoreCase("teaSpoon")){
 			convertedUnit = num * 96;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("pint")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -897,6 +966,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("cup")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -956,6 +1030,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("tea Spoon") || unit.equalsIgnoreCase("teaSpoon")){
 			convertedUnit = num * 6;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("fluid ounce") || unit.equalsIgnoreCase("fluidOunce")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -1021,6 +1100,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("table Spoon") || unit.equalsIgnoreCase("tableSpoon")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -1083,6 +1167,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("tea Spoon") || unit.equalsIgnoreCase("teaSpoon")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -1118,6 +1207,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("ounce")){
 			convertedUnit = num * 35.273990723;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("kilogram")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -1159,6 +1253,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("gram")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -1194,6 +1293,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("ounce")){
 			convertedUnit = num / 28349.5;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("milligram")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
@@ -1235,6 +1339,11 @@ public class UnitConversions {
 			return answer;
 		}
 		
+		if(unit.equalsIgnoreCase("pound")){
+			answer += Double.valueOf(num);
+			return answer;
+		}
+		
 		return answer;
 	}
 	
@@ -1270,6 +1379,11 @@ public class UnitConversions {
 		if(unit.equalsIgnoreCase("pound")){
 			convertedUnit = num / 16;
 			answer += Double.valueOf(convertedUnit);
+			return answer;
+		}
+		
+		if(unit.equalsIgnoreCase("ounce")){
+			answer += Double.valueOf(num);
 			return answer;
 		}
 		
