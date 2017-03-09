@@ -65,6 +65,7 @@ public class Equations {
 										while(iter.hasNext()){
 											output.add(operators.pop());
 										}
+										operators.push(currentToken);
 									}else if(order.containsKey(operators.peek()) && currentToken.equals(operators.peek())){
 										//^^This needs to compare the key of the currentToken, which it does not.
 										operators.push(currentToken);
@@ -87,10 +88,10 @@ public class Equations {
 			output.add(operators.pop());
 		}
 		
-//		System.out.println(solve());
+		System.out.println(solve());
 	}
 	
-	public String solve(){
+	private String solve(){
 		Stack<Double> solvingEquation = new Stack<>();
 		Iterator<String> postfix = output.iterator();
 		String tokens = "";
