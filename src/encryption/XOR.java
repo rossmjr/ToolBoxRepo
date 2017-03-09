@@ -10,11 +10,18 @@ public class XOR {
 	 * @return - returns the encrypted value as a String.
 	 */
 	public static String encrypt(String input, char key){
+		input = input.toUpperCase();
 		String output = input;
 		byte[] conversion = input.getBytes();
 		int key1 = key;
 		for(int i = 0; i < conversion.length; i++){
 			conversion[i] = (byte)(conversion[i] ^ key1);
+			while(conversion[i] < 65){
+				conversion[i] += 26;
+			}
+			while(conversion[i] > 90){
+				conversion[i] -= 26;
+			}
 		}
 		output = new String(conversion);
 		return output;
@@ -27,11 +34,18 @@ public class XOR {
 	 * @return - returns the encrypted value as a String.
 	 */
 	public static String decrypt(String input, char key){
+		input = input.toUpperCase();
 		String output = input;
 		byte[] conversion = input.getBytes();
 		int key1 = key;
 		for(int i = 0; i < conversion.length; i++){
 			conversion[i] = (byte)(conversion[i] ^ key1);
+			while(conversion[i] < 65){
+				conversion[i] += 26;
+			}
+			while(conversion[i] > 90){
+				conversion[i] -= 26;
+			}
 		}
 		output = new String(conversion);
 		return output;
