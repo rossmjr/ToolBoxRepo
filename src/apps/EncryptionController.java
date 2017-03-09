@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import stringMath.Equations;
 
 public class EncryptionController {
 	// Encryptions without keys
@@ -147,6 +148,8 @@ public class EncryptionController {
 		}
 	}
 
+	//
+	//
 	// MathController
 
 	@FXML
@@ -159,14 +162,27 @@ public class EncryptionController {
 	@FXML
 	protected void BC(ActionEvent event) {
 		if (BCInput.getText() != null && !BCInput.getText().isEmpty()) {
-			String s = BCBox.getValue();
-			if (s.equals("Binary")) {
-				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 2).toString());
+			if (BCBox.getValue().equals("Binary")) {
+				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 2).toString());
 			} else if (BCBox.getValue().equals("Octal")) {
-				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 8).toString());
+				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 8).toString());
 			} else if (BCBox.getValue().equals("Hexadecimal")) {
-				BCOutput.setText(stringMath.BaseConversion.convertBases(Long.parseLong(BCInput.getText()), 16).toString());
+				BCOutput.setText(stringMath.BaseConversion.convertDecimal(Long.parseLong(BCInput.getText()), 16).toString());
 			}
+		}
+	}
+	
+	@FXML
+	private TextField SMOutput;
+	@FXML
+	private TextField SMInput;
+
+	@FXML
+	protected void SM(ActionEvent event) {
+		if (SMInput.getText() != null && !SMInput.getText().isEmpty()) {
+			Equations math = new Equations();
+			math.equation(SMInput.getText());
+				SMOutput.setText(math.solve());
 		}
 	}
 
@@ -182,35 +198,35 @@ public class EncryptionController {
 	@FXML
 	protected void CL(ActionEvent event) {
 		if (CLInput.getText() != null && !CLInput.getText().isEmpty()) {
-			if (CLInBox.getValue().equals("Meter")) {
-				CLOutput.setText(stringMath.UnitConversions.convertMeter(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Kilometer")) {
-				CLOutput.setText(stringMath.UnitConversions.convertKilometer(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Centimeter")) {
-				CLOutput.setText(stringMath.UnitConversions.convertCentimeter(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Millimeter")) {
-				CLOutput.setText(stringMath.UnitConversions.convertMillimeter(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Mile")) {
-				CLOutput.setText(stringMath.UnitConversions.convertMile(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()).toString());
-			} else if (CLInBox.getValue().equals("Yard")) {
-				CLOutput.setText(stringMath.UnitConversions.convertYard(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Feet")) {
-				CLOutput.setText(stringMath.UnitConversions.convertFoot(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
-			} else if (CLInBox.getValue().equals("Inch")) {
-				CLOutput.setText(stringMath.UnitConversions.convertInch(Double.parseDouble(CLInput.getText()),
-						CLOutBox.getValue()));
+			String[] unit = CLOutBox.getValue().split(" ");
+			if (CLInBox.getValue().equals("Meter (m)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertMeter(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Kilometer (km)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertKilometer(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Centimeter (cm)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertCentimeter(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Millimeter (mm)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertMillimeter(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Mile (mi)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertMile(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Yard (yd)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertYard(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Feet (ft)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertFoot(Double.parseDouble(CLInput.getText()), unit[0]));
+			} else if (CLInBox.getValue().equals("Inch (in)")) {
+				CLOutput.setText(
+						stringMath.UnitConversions.convertInch(Double.parseDouble(CLInput.getText()), unit[0]));
 			}
 		}
 	}
-	
-	
+
 	@FXML
 	private TextField CTOutput;
 	@FXML
@@ -223,19 +239,20 @@ public class EncryptionController {
 	@FXML
 	protected void CT(ActionEvent event) {
 		if (CTInput.getText() != null && !CTInput.getText().isEmpty()) {
-			if (CTInBox.getValue().equals("Fahrenheit")) {
-				CTOutput.setText(stringMath.UnitConversions.convertFahrenheit(Double.parseDouble(CTInput.getText()),
-						CTOutBox.getValue()));
-			} else if (CTInBox.getValue().equals("Celsius")) {
-				CTOutput.setText(stringMath.UnitConversions.convertCelsius(Double.parseDouble(CTInput.getText()),
-						CTOutBox.getValue()));
-			} else if (CTInBox.getValue().equals("Kelvin")) {
-				CTOutput.setText(stringMath.UnitConversions.convertKelvin(Double.parseDouble(CTInput.getText()),
-						CTOutBox.getValue()));
-			} 
+			String[] unit = CTOutBox.getValue().split(" ");
+			if (CTInBox.getValue().equals("Fahrenheit (F)")) {
+				CTOutput.setText(
+						stringMath.UnitConversions.convertFahrenheit(Double.parseDouble(CTInput.getText()), unit[0]));
+			} else if (CTInBox.getValue().equals("Celsius (C)")) {
+				CTOutput.setText(
+						stringMath.UnitConversions.convertCelsius(Double.parseDouble(CTInput.getText()), unit[0]));
+			} else if (CTInBox.getValue().equals("Kelvin (K)")) {
+				CTOutput.setText(
+						stringMath.UnitConversions.convertKelvin(Double.parseDouble(CTInput.getText()), unit[0]));
+			}
 		}
 	}
-	
+
 	@FXML
 	private TextField CVOutput;
 	@FXML
@@ -248,37 +265,38 @@ public class EncryptionController {
 	@FXML
 	protected void CV(ActionEvent event) {
 		if (CVInput.getText() != null && !CVInput.getText().isEmpty()) {
-			if (CVInBox.getValue().equals("Liter")) {
-				CVOutput.setText(stringMath.UnitConversions.convertLiter(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Millileter")) {
-				CVOutput.setText(stringMath.UnitConversions.convertMilliliter(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Gallon")) {
-				CVOutput.setText(stringMath.UnitConversions.convertGallon(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Quart")) {
-				CVOutput.setText(stringMath.UnitConversions.convertQuart(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Pint")) {
-				CVOutput.setText(stringMath.UnitConversions.convertPint(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Cup")) {
-				CVOutput.setText(stringMath.UnitConversions.convertCup(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Fluid Ounce")) {
-				CVOutput.setText(stringMath.UnitConversions.convertFluidOunce(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Table Spoon")) {
-				CVOutput.setText(stringMath.UnitConversions.convertTableSpoon(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} else if (CVInBox.getValue().equals("Tea Spoon")) {
-				CVOutput.setText(stringMath.UnitConversions.convertTeaSpoon(Double.parseDouble(CVInput.getText()),
-						CVOutBox.getValue()));
-			} 
+			String[] unit = CVOutBox.getValue().split(" \\(");
+			if (CVInBox.getValue().equals("Liter (L)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertLiter(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Millileter (ml)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertMilliliter(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Gallon (gal)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertGallon(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Quart (qt)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertQuart(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Pint (pt)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertPint(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Cup (c)")) {
+//				String[] unit = CVOutBox.getValue().split(" ");
+				CVOutput.setText(stringMath.UnitConversions.convertCup(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Fluid Ounce (Fl Oz)")) {
+//				String[] unit = CVOutBox.getValue().split("(");
+				CVOutput.setText(stringMath.UnitConversions.convertFluidOunce(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Tablespoon (tbsp)")) {
+//				String[] unit = CVOutBox.getValue().split("(");
+				CVOutput.setText(stringMath.UnitConversions.convertTableSpoon(Double.parseDouble(CVInput.getText()), unit[0]));
+			} else if (CVInBox.getValue().equals("Teaspoon (tsp)")) {
+//				String[] unit = CVOutBox.getValue().split("(");
+				CVOutput.setText(stringMath.UnitConversions.convertTeaSpoon(Double.parseDouble(CVInput.getText()), unit[0]));
+			}
 		}
 	}
-	
+
 	@FXML
 	private TextField CWOutput;
 	@FXML
@@ -291,22 +309,23 @@ public class EncryptionController {
 	@FXML
 	protected void CW(ActionEvent event) {
 		if (CWInput.getText() != null && !CWInput.getText().isEmpty()) {
-			if (CWInBox.getValue().equals("Kilogram")) {
-				CWOutput.setText(stringMath.UnitConversions.convertKilogram(Double.parseDouble(CWInput.getText()),
-						CWOutBox.getValue()));
-			} else if (CWInBox.getValue().equals("Gram")) {
-				CWOutput.setText(stringMath.UnitConversions.convertGram(Double.parseDouble(CWInput.getText()),
-						CWOutBox.getValue()));
-			} else if (CWInBox.getValue().equals("Milligram")) {
-				CWOutput.setText(stringMath.UnitConversions.convertMilligram(Double.parseDouble(CWInput.getText()),
-						CWOutBox.getValue()));
-			} else if (CWInBox.getValue().equals("Pound")) {
-				CWOutput.setText(stringMath.UnitConversions.convertPound(Double.parseDouble(CWInput.getText()),
-						CWOutBox.getValue()));
-			} else if (CWInBox.getValue().equals("Ounce")) {
-				CWOutput.setText(stringMath.UnitConversions.convertOunce(Double.parseDouble(CWInput.getText()),
-						CWOutBox.getValue()));
-			} 
+			String[] unit = CWOutBox.getValue().split(" ");
+			if (CWInBox.getValue().equals("Kilogram (kg)")) {
+				CWOutput.setText(
+						stringMath.UnitConversions.convertKilogram(Double.parseDouble(CWInput.getText()), unit[0]));
+			} else if (CWInBox.getValue().equals("Gram (g)")) {
+				CWOutput.setText(
+						stringMath.UnitConversions.convertGram(Double.parseDouble(CWInput.getText()), unit[0]));
+			} else if (CWInBox.getValue().equals("Milligram (mg)")) {
+				CWOutput.setText(
+						stringMath.UnitConversions.convertMilligram(Double.parseDouble(CWInput.getText()), unit[0]));
+			} else if (CWInBox.getValue().equals("Pound (lb)")) {
+				CWOutput.setText(
+						stringMath.UnitConversions.convertPound(Double.parseDouble(CWInput.getText()), unit[0]));
+			} else if (CWInBox.getValue().equals("Ounce (oz)")) {
+				CWOutput.setText(
+						stringMath.UnitConversions.convertOunce(Double.parseDouble(CWInput.getText()), unit[0]));
+			}
 		}
 	}
 

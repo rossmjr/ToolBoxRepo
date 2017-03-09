@@ -43,9 +43,9 @@
 						<Tab text="String Math" closable="false">
 							<AnchorPane>
 								<children>
-									<TextField layoutX="200" layoutY="50" promptText="Input" />
-									<Button layoutX="245" layoutY="100" text="Solve" />
-									<TextField id="SMOutput" layoutX="200" layoutY="150"
+									<TextField fx:id="SMInput" layoutX="200" layoutY="50" promptText="Input" />
+									<Button layoutX="245" layoutY="100" text="Solve" onAction="#SM"/>
+									<TextField fx:id="SMOutput" layoutX="200" layoutY="150"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
