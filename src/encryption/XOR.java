@@ -16,14 +16,12 @@ public class XOR {
 		int key1 = key;
 		for(int i = 0; i < conversion.length; i++){
 			conversion[i] = (byte)(conversion[i] ^ key1);
-			while(conversion[i] < 65){
-				conversion[i] += 26;
-			}
-			while(conversion[i] > 90){
-				conversion[i] -= 26;
-			}
 		}
-		output = new String(conversion);
+		StringBuilder sb = new StringBuilder();
+		for(byte b : conversion){
+			sb.append(b + " ");
+		}
+		output = sb.toString();
 		return output;
 	}
 	/**
@@ -34,20 +32,23 @@ public class XOR {
 	 * @return - returns the encrypted value as a String.
 	 */
 	public static String decrypt(String input, char key){
-		input = input.toUpperCase();
-		String output = input;
-		byte[] conversion = input.getBytes();
+		String output = "";
+		int[] in = new int[input.length()];
 		int key1 = key;
-		for(int i = 0; i < conversion.length; i++){
-			conversion[i] = (byte)(conversion[i] ^ key1);
-			while(conversion[i] < 65){
-				conversion[i] += 26;
-			}
-			while(conversion[i] > 90){
-				conversion[i] -= 26;
-			}
+		int count = 0;
+		for(String s : input.split(" ")){
+			in[count++] = Integer.parseInt(s);
 		}
-		output = new String(conversion);
+		for(int i = 0; i < count; i++){
+			output += (char) ((in[i]) ^ key1);
+		}
+//		input = new String(in);
+//		byte[] conversion = input.getBytes();
+//		for(int i = 0; i < conversion.length; i++){
+//			conversion[i] = (byte)(conversion[i] ^ key1);
+//			
+//		}
+//		output = new String(conversion);
 		return output;
 	}
 }
