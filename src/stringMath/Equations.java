@@ -88,7 +88,7 @@ public class Equations {
 			output.add(operators.pop());
 		}
 		
-		System.out.println(solve());
+//		System.out.println(solve());
 	}
 	
 	public String solve(){

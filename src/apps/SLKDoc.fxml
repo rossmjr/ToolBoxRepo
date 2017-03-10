@@ -45,7 +45,7 @@
 						<Tab styleClass="tab" text="String Math" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
+								<Label styleClass="instruction" layoutX="420" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
 									<TextField fx:id="SMInput" layoutX="760" layoutY="400" promptText="Input" />
 									<Button styleClass="button" layoutX="800" layoutY="450" text="Solve" onAction="#SM"/>
 									<TextField fx:id="SMOutput" layoutX="760" layoutY="500"
@@ -56,8 +56,8 @@
 						<Tab styleClass="tab" text="Convert Length" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
-									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="550"
+								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
+									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="580"
 										layoutY="400" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
@@ -72,11 +72,11 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLInput" layoutX="760" layoutY="400"
+									<TextField fx:id="CLInput" layoutX="790" layoutY="400"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="800" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="830" layoutY="450" text="Convert"
 										onAction="#CL" />
-									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="550"
+									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="580"
 										layoutY="500" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
@@ -91,7 +91,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLOutput" layoutX="760" layoutY="500"
+									<TextField fx:id="CLOutput" layoutX="790" layoutY="500"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -104,9 +104,9 @@
 										layoutY="400" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit" />
-												<String fx:value="Celsius" />
-												<String fx:value="Kelvin" />
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celsius (C)" />
+												<String fx:value="Kelvin (K)" />
 											</FXCollections>
 										</items>
 									</ComboBox>
@@ -118,9 +118,9 @@
 										layoutY="500" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
-												<String fx:value="Fahrenheit" />
-												<String fx:value="Celsius" />
-												<String fx:value="Kelvin" />
+												<String fx:value="Fahrenheit (F)" />
+												<String fx:value="Celsius (C)" />
+												<String fx:value="Kelvin (K)" />
 											</FXCollections>
 										</items>
 									</ComboBox>

@@ -21,7 +21,8 @@ public class Driver extends Application{
 			scene.getStylesheets().addAll(style);
 			primaryStage.setTitle("ToolBox Library Demo");
 			primaryStage.setAlwaysOnTop(true);
-			primaryStage.setResizable(false);
+			primaryStage.setResizable(true
+					);
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
