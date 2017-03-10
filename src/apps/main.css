@@ -1,7 +1,12 @@
 .Pane {
     -fx-background-color: #1d1d1d;
 }
-
+.instruction {
+	-fx-text-fill: #d8d8d8;
+}
+.convert {
+	-fx-alignment: center;
+}
 .tab {
     -fx-background-color: derive(#1d1d1d,20%);
 }
