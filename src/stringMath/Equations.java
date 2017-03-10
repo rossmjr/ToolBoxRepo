@@ -91,7 +91,7 @@ public class Equations {
 		System.out.println(solve());
 	}
 	
-	private String solve(){
+	public String solve(){
 		Stack<Double> solvingEquation = new Stack<>();
 		Iterator<String> postfix = output.iterator();
 		String tokens = "";

@@ -22,7 +22,7 @@
 						<Tab styleClass="tab" text="Base Conversion" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-									<Label styleClass="instruction" layoutX="550" layoutY="200" text="Base Conversion takes in a number in decimal form, and converts it to the selected output form"></Label>
+									<Label styleClass="instruction" layoutX="450" layoutY="200" text="Base Conversion takes in a number in decimal form, and converts it to the selected output form"></Label>
 									<ComboBox fx:id="BCBox" layoutX="550" layoutY="450"
 										promptText="Output Format">
 										<items>
@@ -45,7 +45,7 @@
 						<Tab styleClass="tab" text="String Math" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
 									<TextField fx:id="SMInput" layoutX="760" layoutY="400" promptText="Input" />
 									<Button styleClass="button" layoutX="800" layoutY="450" text="Solve" onAction="#SM"/>
 									<TextField fx:id="SMOutput" layoutX="760" layoutY="500"
@@ -56,7 +56,7 @@
 						<Tab styleClass="tab" text="Convert Length" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
 									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -99,7 +99,7 @@
 						<Tab styleClass="tab" text="Convert Temperature" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts between Fahrenheit, Celsius, and Kelvin"></Label>
+								<Label styleClass="instruction" layoutX="540" layoutY="200" text="Converts between Fahrenheit, Celsius, and Kelvin"></Label>
 									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -132,7 +132,7 @@
 						<Tab styleClass="tab" text="Convert Volume" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts units of volume, including imperial and metric units"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts units of volume, including imperial and metric units"></Label>
 									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -177,7 +177,7 @@
 						<Tab styleClass="tab" text="Convert Weight" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts units of weight, including imperial and metric units"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts units of weight, including imperial and metric units"></Label>
 									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -221,7 +221,7 @@
 					<tabs>
 						<Tab styleClass="tab" text="ROT13" closable="false">
 							<AnchorPane styleClass="Pane">
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
 								<children>
 									<TextField fx:id="RMessage" prefWidth="300" layoutX="760"
 										layoutY="400" promptText="Message" />
@@ -237,7 +237,7 @@
 						<Tab styleClass="tab" text="Beaufort" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input with the input key using the Beaufort Cipher, Key can be any length"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input with the input key using the Beaufort Cipher, Key can be any length"></Label>
 									<TextField fx:id="BMessage" prefWidth="300" layoutX="760"
 										layoutY="350" promptText="Message" />
 									<TextField fx:id="BKey" prefWidth="300" layoutX="760"
@@ -254,7 +254,7 @@
 						<Tab styleClass="tab" text="Sub347" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each character with the character 3 before it, 4 after it, and 7 after it"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each character with the character 3 before it, 4 after it, and 7 after it"></Label>
 									<TextField fx:id="SMessage" prefWidth="300" layoutX="760"
 										layoutY="400" promptText="Message" />
 									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
@@ -269,7 +269,7 @@
 						<Tab styleClass="tab" text="RunningKeyVigenere" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-									<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact same quantity of characters as the message"></Label>
+									<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact same quantity of characters as the message"></Label>
 									 <Label styleClass="instruction" layoutX="550" layoutY="225" text="(example: 'HelloWorld' with the key 'BaconLover')"></Label>
 									<TextField fx:id="RKVMessage" prefWidth="300"
 										layoutX="760" layoutY="350" promptText="Message" />
@@ -287,7 +287,7 @@
 						<Tab styleClass="tab" text="XOR" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input message using Exclusive Or, key must be exactly one character"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using Exclusive Or, key must be exactly one character"></Label>
 									<TextField fx:id="XMessage" prefWidth="300" layoutX="760"
 										layoutY="350" promptText="Message" />
 									<TextField fx:id="XKey" prefWidth="300" layoutX="760"
@@ -304,7 +304,7 @@
 						<Tab styleClass="tab" text="Grid" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Encrypts the input message using the Box Cipher"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using the Box Cipher"></Label>
 									<TextField fx:id="GMessage" prefWidth="300" layoutX="760"
 										layoutY="400" promptText="Message" />
 									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"

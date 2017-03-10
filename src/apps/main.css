@@ -3,6 +3,8 @@
 }
 .instruction {
 	-fx-text-fill: #d8d8d8;
+	-fx-font-size: 15pt;
+	
 }
 .convert {
 	-fx-alignment: center;
