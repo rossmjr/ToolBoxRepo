@@ -221,15 +221,15 @@
 					<tabs>
 						<Tab styleClass="tab" text="ROT13" closable="false">
 							<AnchorPane styleClass="Pane">
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
+								<Label styleClass="instruction" layoutX="530" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
 								<children>
-									<TextField fx:id="RMessage" prefWidth="300" layoutX="760"
+									<TextField fx:id="RMessage" prefWidth="300" layoutX="650"
 										layoutY="400" promptText="Message" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="690" layoutY="450" text="Encrypt"
 										onAction="#encryptR" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="810" layoutY="450" text="Decrypt"
 										onAction="#decryptR" />
-									<TextField prefWidth="300" fx:id="ROutput" layoutX="760"
+									<TextField prefWidth="300" fx:id="ROutput" layoutX="650"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
@@ -305,14 +305,14 @@
 						<Tab styleClass="tab" text="Grid" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using the Box Cipher"></Label>
-									<TextField fx:id="GMessage" prefWidth="300" layoutX="760"
+								<Label styleClass="instruction" layoutX="490" layoutY="200" text="Encrypts the input message using the Box Cipher"></Label>
+									<TextField fx:id="GMessage" prefWidth="300" layoutX="550"
 										layoutY="400" promptText="Message" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="570" layoutY="450" text="Encrypt"
 										onAction="#encryptG" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="730" layoutY="450" text="Decrypt"
 										onAction="#decryptG" />
-									<TextField  prefWidth="300" fx:id="GOutput" layoutX="760"
+									<TextField  prefWidth="300" fx:id="GOutput" layoutX="550"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
