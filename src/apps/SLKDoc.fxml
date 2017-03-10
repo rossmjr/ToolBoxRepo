@@ -35,7 +35,7 @@
 									</ComboBox>
 									<TextField fx:id="BCInput" layoutX="760" layoutY="400"
 										promptText="Input(in decimal)" />
-									<Button layoutX="800" layoutY="450" text="Convert"
+									<Button layoutX="785" layoutY="450" text="Convert"
 										onAction="#BC" />
 									<TextField fx:id="BCOutput" layoutX="760" layoutY="500"
 										text="Output" editable="false" />
@@ -47,7 +47,7 @@
 								<children>
 								<Label styleClass="instruction" layoutX="420" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
 									<TextField fx:id="SMInput" layoutX="760" layoutY="400" promptText="Input" />
-									<Button styleClass="button" layoutX="800" layoutY="450" text="Solve" onAction="#SM"/>
+									<Button styleClass="button" layoutX="790" layoutY="450" text="Solve" onAction="#SM"/>
 									<TextField fx:id="SMOutput" layoutX="760" layoutY="500"
 										text="Output" editable="false" />
 								</children>
@@ -74,7 +74,7 @@
 									</ComboBox>
 									<TextField fx:id="CLInput" layoutX="790" layoutY="400"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="830" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="815" layoutY="450" text="Convert"
 										onAction="#CL" />
 									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="580"
 										layoutY="500" promptText="Output Unit">
@@ -138,7 +138,7 @@
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Liter (L)" />
-												<String fx:value="Millileter (ml)" />
+												<String fx:value="Milliliter (ml)" />
 												<String fx:value="Gallon (gal)" />
 												<String fx:value="Quart (qt)" />
 												<String fx:value="Pint (pt)" />
@@ -158,7 +158,7 @@
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Liter (L)" />
-												<String fx:value="Millileter (ml)" />
+												<String fx:value="Milliliter (ml)" />
 												<String fx:value="Gallon (gal)" />
 												<String fx:value="Quart (qt)" />
 												<String fx:value="Pint (pt)" />
@@ -254,7 +254,8 @@
 						<Tab styleClass="tab" text="Sub347" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each character with the character 3 before it, 4 after it, and 7 after it"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each character with the character 3 before it,"></Label>
+								<Label styleClass="instruction" layoutX="520" layoutY="230" text="4 after it, and 7 after it"></Label>
 									<TextField fx:id="SMessage" prefWidth="300" layoutX="760"
 										layoutY="400" promptText="Message" />
 									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
@@ -269,8 +270,8 @@
 						<Tab styleClass="tab" text="RunningKeyVigenere" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-									<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact same quantity of characters as the message"></Label>
-									 <Label styleClass="instruction" layoutX="550" layoutY="225" text="(example: 'HelloWorld' with the key 'BaconLover')"></Label>
+									<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact"></Label>
+									 <Label styleClass="instruction" layoutX="520" layoutY="225" text="same quantity of characters as the message. (example: 'HelloWorld' with the key 'BaconLover')"></Label>
 									<TextField fx:id="RKVMessage" prefWidth="300"
 										layoutX="760" layoutY="350" promptText="Message" />
 									<TextField fx:id="RKVKey" prefWidth="300" layoutX="760"

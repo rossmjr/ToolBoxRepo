@@ -269,7 +269,7 @@ public class EncryptionController {
 			if (CVInBox.getValue().equals("Liter (L)")) {
 //				String[] unit = CVOutBox.getValue().split(" ");
 				CVOutput.setText(stringMath.UnitConversions.convertLiter(Double.parseDouble(CVInput.getText()), unit[0]));
-			} else if (CVInBox.getValue().equals("Millileter (ml)")) {
+			} else if (CVInBox.getValue().equals("Milliliter (ml)")) {
 //				String[] unit = CVOutBox.getValue().split(" ");
 				CVOutput.setText(stringMath.UnitConversions.convertMilliliter(Double.parseDouble(CVInput.getText()), unit[0]));
 			} else if (CVInBox.getValue().equals("Gallon (gal)")) {
