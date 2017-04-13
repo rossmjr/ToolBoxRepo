@@ -22,8 +22,8 @@
 						<Tab styleClass="tab" text="Base Conversion" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-									<Label styleClass="instruction" layoutX="450" layoutY="200" text="Base Conversion takes in a number in decimal form, and converts it to the selected output form"></Label>
-									<ComboBox fx:id="BCBox" layoutX="550" layoutY="450"
+									<Label styleClass="instruction" layoutX="330" layoutY="200" text="Base Conversion takes in a number in decimal form, and converts it to the selected output form"></Label>
+									<ComboBox fx:id="BCBox" layoutX="540" layoutY="400"
 										promptText="Output Format">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
@@ -33,11 +33,11 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="BCInput" layoutX="760" layoutY="400"
+									<TextField fx:id="BCInput" layoutX="690" layoutY="350"
 										promptText="Input(in decimal)" />
-									<Button layoutX="785" layoutY="450" text="Convert"
+									<Button layoutX="715" layoutY="400" text="Convert"
 										onAction="#BC" />
-									<TextField fx:id="BCOutput" layoutX="760" layoutY="500"
+									<TextField fx:id="BCOutput" layoutX="690" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -45,10 +45,10 @@
 						<Tab styleClass="tab" text="String Math" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="420" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
-									<TextField fx:id="SMInput" layoutX="760" layoutY="400" promptText="Input" />
-									<Button styleClass="button" layoutX="790" layoutY="450" text="Solve" onAction="#SM"/>
-									<TextField fx:id="SMOutput" layoutX="760" layoutY="500"
+								<Label styleClass="instruction" layoutX="310" layoutY="200" text="Enter a Math problem to get the result. All input must have a space seperating it (example: '4 + 5 * 2 - 5')"></Label>
+									<TextField fx:id="SMInput" layoutX="670" layoutY="350" promptText="Input" />
+									<Button styleClass="button" layoutX="700" layoutY="400" text="Solve" onAction="#SM"/>
+									<TextField fx:id="SMOutput" layoutX="670" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -56,8 +56,8 @@
 						<Tab styleClass="tab" text="Convert Length" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="550" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
-									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="580"
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
+									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="540"
 										layoutY="400" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
@@ -72,12 +72,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLInput" layoutX="790" layoutY="400"
+									<TextField fx:id="CLInput" layoutX="700" layoutY="350"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="815" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="725" layoutY="400" text="Convert"
 										onAction="#CL" />
-									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="580"
-										layoutY="500" promptText="Output Unit">
+									<ComboBox fx:id="CLOutBox" prefWidth="110" layoutX="540"
+										layoutY="450" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Meter (m)" />
@@ -91,7 +91,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLOutput" layoutX="790" layoutY="500"
+									<TextField fx:id="CLOutput" layoutX="700" layoutY="500"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -99,7 +99,7 @@
 						<Tab styleClass="tab" text="Convert Temperature" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="540" layoutY="200" text="Converts between Fahrenheit, Celsius, and Kelvin"></Label>
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts between Fahrenheit, Celsius, and Kelvin"></Label>
 									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -132,7 +132,7 @@
 						<Tab styleClass="tab" text="Convert Volume" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts units of volume, including imperial and metric units"></Label>
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts units of volume, including imperial and metric units"></Label>
 									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
@@ -177,7 +177,7 @@
 						<Tab styleClass="tab" text="Convert Weight" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Converts units of weight, including imperial and metric units"></Label>
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts units of weight, including imperial and metric units"></Label>
 									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="550"
 										layoutY="400" promptText="Input Unit">
 										<items>
