@@ -58,7 +58,7 @@
 								<children>
 								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts length values of either metric or imperial units"></Label>
 									<ComboBox fx:id="CLInBox" prefWidth="110" layoutX="540"
-										layoutY="400" promptText="Input Unit">
+										layoutY="350" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Meter (m)" />
@@ -91,7 +91,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CLOutput" layoutX="700" layoutY="500"
+									<TextField fx:id="CLOutput" layoutX="700" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -100,8 +100,8 @@
 							<AnchorPane styleClass="Pane">
 								<children>
 								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts between Fahrenheit, Celsius, and Kelvin"></Label>
-									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="550"
-										layoutY="400" promptText="Input Unit">
+									<ComboBox fx:id="CTInBox" prefWidth="110" layoutX="540"
+										layoutY="350" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Fahrenheit (F)" />
@@ -110,12 +110,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CTInput" layoutX="760" layoutY="400"
+									<TextField fx:id="CTInput" layoutX="700" layoutY="350"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="800" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="725" layoutY="400" text="Convert"
 										onAction="#CT" />
-									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="550"
-										layoutY="500" promptText="Output Unit">
+									<ComboBox fx:id="CTOutBox" prefWidth="110" layoutX="540"
+										layoutY="450" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Fahrenheit (F)" />
@@ -124,7 +124,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CTOutput" layoutX="760" layoutY="500"
+									<TextField fx:id="CTOutput" layoutX="700" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -133,8 +133,8 @@
 							<AnchorPane styleClass="Pane">
 								<children>
 								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts units of volume, including imperial and metric units"></Label>
-									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="550"
-										layoutY="400" promptText="Input Unit">
+									<ComboBox fx:id="CVInBox" prefWidth="110" layoutX="540"
+										layoutY="350" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Liter (L)" />
@@ -149,12 +149,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CVInput" layoutX="760" layoutY="400"
+									<TextField fx:id="CVInput" layoutX="700" layoutY="350"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="800" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="725" layoutY="400" text="Convert"
 										onAction="#CV" />
-									<ComboBox fx:id="CVOutBox" prefWidth="110" layoutX="550"
-										layoutY="500" promptText="Output Unit">
+									<ComboBox fx:id="CVOutBox" prefWidth="110" layoutX="540"
+										layoutY="450" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Liter (L)" />
@@ -169,7 +169,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CVOutput" layoutX="760" layoutY="500"
+									<TextField fx:id="CVOutput" layoutX="700" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -178,8 +178,8 @@
 							<AnchorPane styleClass="Pane">
 								<children>
 								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Converts units of weight, including imperial and metric units"></Label>
-									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="550"
-										layoutY="400" promptText="Input Unit">
+									<ComboBox fx:id="CWInBox" prefWidth="110" layoutX="540"
+										layoutY="350" promptText="Input Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Kilogram (kg)" />
@@ -190,12 +190,12 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CWInput" layoutX="760" layoutY="400"
+									<TextField fx:id="CWInput" layoutX="700" layoutY="350"
 										promptText="Input" />
-									<Button styleClass="button" layoutX="800" layoutY="450" text="Convert"
+									<Button styleClass="button" layoutX="725" layoutY="400" text="Convert"
 										onAction="#CW" />
-									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="550"
-										layoutY="500" promptText="Output Unit">
+									<ComboBox fx:id="CWOutBox" prefWidth="110" layoutX="540"
+										layoutY="450" promptText="Output Unit">
 										<items>
 											<FXCollections fx:factory="observableArrayList">
 												<String fx:value="Kilogram (kg)" />
@@ -206,7 +206,7 @@
 											</FXCollections>
 										</items>
 									</ComboBox>
-									<TextField fx:id="CWOutput" layoutX="760" layoutY="500"
+									<TextField fx:id="CWOutput" layoutX="700" layoutY="450"
 										text="Output" editable="false" />
 								</children>
 							</AnchorPane>
@@ -221,32 +221,32 @@
 					<tabs>
 						<Tab styleClass="tab" text="ROT13" closable="false">
 							<AnchorPane styleClass="Pane">
-								<Label styleClass="instruction" layoutX="530" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
+								<Label styleClass="instruction" layoutX="450" layoutY="200" text="Encrypts the input message using the ROT13 Algorithm"></Label>
 								<children>
-									<TextField fx:id="RMessage" prefWidth="300" layoutX="650"
-										layoutY="400" promptText="Message" />
-									<Button styleClass="button" layoutX="690" layoutY="450" text="Encrypt"
+									<TextField fx:id="RMessage" prefWidth="300" layoutX="550"
+										layoutY="350" promptText="Message" />
+									<Button styleClass="button" layoutX="570" layoutY="400" text="Encrypt"
 										onAction="#encryptR" />
-									<Button styleClass="button" layoutX="810" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="730" layoutY="400" text="Decrypt"
 										onAction="#decryptR" />
-									<TextField prefWidth="300" fx:id="ROutput" layoutX="650"
-										layoutY="500" text="Result" editable="false" />
+									<TextField prefWidth="300" fx:id="ROutput" layoutX="550"
+										layoutY="450" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
 						</Tab>
 						<Tab styleClass="tab" text="Beaufort" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input with the input key using the Beaufort Cipher, Key can be any length"></Label>
-									<TextField fx:id="BMessage" prefWidth="300" layoutX="760"
+								<Label styleClass="instruction" layoutX="360" layoutY="200" text="Encrypts the input with the input key using the Beaufort Cipher, Key can be any length"></Label>
+									<TextField fx:id="BMessage" prefWidth="300" layoutX="600"
 										layoutY="350" promptText="Message" />
-									<TextField fx:id="BKey" prefWidth="300" layoutX="760"
+									<TextField fx:id="BKey" prefWidth="300" layoutX="600"
 										layoutY="400" promptText="Key" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="620" layoutY="450" text="Encrypt"
 										onAction="#encryptB" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="780" layoutY="450" text="Decrypt"
 										onAction="#decryptB" />
-									<TextField prefWidth="300" fx:id="BOutput" layoutX="760"
+									<TextField prefWidth="300" fx:id="BOutput" layoutX="600"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
@@ -254,15 +254,15 @@
 						<Tab styleClass="tab" text="Sub347" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each character with the character 3 before it,"></Label>
-								<Label styleClass="instruction" layoutX="520" layoutY="230" text="4 after it, and 7 after it"></Label>
-									<TextField fx:id="SMessage" prefWidth="300" layoutX="760"
+								<Label styleClass="instruction" layoutX="430" layoutY="200" text="Encrypts the input message using a substitution Cipher, replacing each "></Label>
+								<Label styleClass="instruction" layoutX="430" layoutY="230" text="character with the character 3 before it, 4 after it, and 7 after it"></Label>
+									<TextField fx:id="SMessage" prefWidth="300" layoutX="580"
 										layoutY="400" promptText="Message" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="600" layoutY="450" text="Encrypt"
 										onAction="#encryptS" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="760" layoutY="450" text="Decrypt"
 										onAction="#decryptS" />
-									<TextField prefWidth="300" fx:id="SOutput" layoutX="760"
+									<TextField prefWidth="300" fx:id="SOutput" layoutX="580"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
@@ -270,17 +270,17 @@
 						<Tab styleClass="tab" text="RunningKeyVigenere" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-									<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact"></Label>
-									 <Label styleClass="instruction" layoutX="520" layoutY="225" text="same quantity of characters as the message. (example: 'HelloWorld' with the key 'BaconLover')"></Label>
+									<Label styleClass="instruction" layoutX="370" layoutY="200" text="Encrypts the input message with the given key using the Vigenere Cipher, Key must be the exact"></Label>
+									 <Label styleClass="instruction" layoutX="370" layoutY="225" text="same quantity of characters as the message. (example: 'HelloWorld' with the key 'BaconLover')"></Label>
 									<TextField fx:id="RKVMessage" prefWidth="300"
-										layoutX="760" layoutY="350" promptText="Message" />
-									<TextField fx:id="RKVKey" prefWidth="300" layoutX="760"
+										layoutX="640" layoutY="350" promptText="Message" />
+									<TextField fx:id="RKVKey" prefWidth="300" layoutX="640"
 										layoutY="400" promptText="Key" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="660" layoutY="450" text="Encrypt"
 										onAction="#encryptRKV" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="820" layoutY="450" text="Decrypt"
 										onAction="#decryptRKV" />
-									<TextField prefWidth="300" fx:id="RKVOutput" layoutX="760"
+									<TextField prefWidth="300" fx:id="RKVOutput" layoutX="640"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
@@ -288,16 +288,16 @@
 						<Tab styleClass="tab" text="XOR" closable="false">
 							<AnchorPane styleClass="Pane">
 								<children>
-								<Label styleClass="instruction" layoutX="520" layoutY="200" text="Encrypts the input message using Exclusive Or, key must be exactly one character"></Label>
-									<TextField fx:id="XMessage" prefWidth="300" layoutX="760"
+								<Label styleClass="instruction" layoutX="380" layoutY="200" text="Encrypts the input message using Exclusive Or, key must be exactly one character"></Label>
+									<TextField fx:id="XMessage" prefWidth="300" layoutX="580"
 										layoutY="350" promptText="Message" />
-									<TextField fx:id="XKey" prefWidth="300" layoutX="760"
+									<TextField fx:id="XKey" prefWidth="300" layoutX="5800"
 										layoutY="400" promptText="Key" />
-									<Button styleClass="button" layoutX="780" layoutY="450" text="Encrypt"
+									<Button styleClass="button" layoutX="600" layoutY="450" text="Encrypt"
 										onAction="#encryptX" />
-									<Button styleClass="button" layoutX="940" layoutY="450" text="Decrypt"
+									<Button styleClass="button" layoutX="760" layoutY="450" text="Decrypt"
 										onAction="#decryptX" />
-									<TextField prefWidth="300" fx:id="XOutput" layoutX="760"
+									<TextField prefWidth="300" fx:id="XOutput" layoutX="580"
 										layoutY="500" text="Result" editable="false" />
 								</children>
 							</AnchorPane>
